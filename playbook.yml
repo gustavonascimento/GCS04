@@ -20,4 +20,4 @@
       become_user: postgres
       postgresql_user: db={{ dbname }} name={{ dbuser }} password={{ dbpassword }} priv=ALL
 
-- include: deploy.yml
+- import_playbook: deploy.yml
